@@ -480,3 +480,13 @@
     plugin_stock_duration: # optional, default is 1d
     # Time interval between points
     plugin_stock_interval: # optional, default is 5m
+    
+    name: Full-year calendar
+uses: lowlighter/metrics@latest
+with:
+  filename: metrics.plugin.isocalendar.fullyear.svg
+  token: ${{ secrets.METRICS_TOKEN }}
+  base: ""
+  plugin_isocalendar: yes
+  plugin_isocalendar_duration: full-year
+
