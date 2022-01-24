@@ -1,0 +1,480 @@
+- name: Metrics embed
+  # You may pin to the exact commit or the version.
+  # uses: lowlighter/metrics@0c4ce7ce02e34cc5a9d1654461c69c6b2890dce6
+  uses: lowlighter/metrics@v3.18
+  with:
+    # Base content
+    base: # optional, default is header, activity, community, repositories, metadata
+    # Repositories to fetch
+    repositories: # optional, default is 100
+    # Repositories to fetch at a time
+    repositories_batch: # optional, default is 100
+    # Include forks
+    repositories_forks: # optional
+    # Repositories affiliations
+    repositories_affiliations: # optional, default is owner
+    # Default skipped repositories
+    repositories_skipped: # optional, default is 
+    # Default ignored users
+    users_ignored: # optional, default is github-actions[bot], dependabot[bot], dependabot-preview[bot]
+    # Identifiers that has been used for authoring commits
+    commits_authoring: # optional, default is .user.login
+    # GitHub Personal Access Token
+    token: ${{ secrets.METRICS_TOKEN }}
+    # GitHub username
+    user: # optional, default is 
+    # GitHub repository
+    repo: # optional, default is 
+    # GitHub Token used to commit metrics
+    committer_token: # optional, default is ${{ github.token }}
+    # Target branch
+    committer_branch: # optional, default is 
+    # Commit message
+    committer_message: # optional, default is Update ${filename} - [Skip GitHub Action]
+    # Gist id
+    committer_gist: # optional, default is 
+    # Output path
+    filename: # optional, default is github-metrics.*
+    # Markdown template path
+    markdown: # optional, default is TEMPLATE.md
+    # Markdown file cache
+    markdown_cache: # optional, default is .cache
+    # Output action
+    output_action: # optional, default is commit
+    # Output condition
+    output_condition: # optional
+    # Optimization features
+    optimize: # optional, default is css, xml
+    # Community templates to setup
+    setup_community_templates: # optional, default is 
+    # Template
+    template: # optional, default is classic
+    # Query parameters
+    query: # optional, default is {}
+    # Extra CSS
+    extras_css: # optional, default is 
+    # Timezone for dates
+    config_timezone: # optional, default is 
+    # Plugin order
+    config_order: # optional, default is 
+    # Use twemojis
+    config_twemoji: # optional
+    # Use GitHub custom emojis
+    config_gemoji: # optional, default is true
+    # Display width (for image output formats)
+    config_display: # optional, default is regular
+    # Use CSS animations
+    config_animations: # optional, default is true
+    # Base64-encoded images
+    config_base64: # optional, default is true
+    # Output padding
+    config_padding: # optional, default is 0, 8 + 11%
+    # Output format
+    config_output: # optional, default is auto
+    # Retries in case of failures (for rendering)
+    retries: # optional, default is 3
+    # Delay between each retry (in seconds, for rendering)
+    retries_delay: # optional, default is 300
+    # Retries in case of failures (for output action)
+    retries_output_action: # optional, default is 5
+    # Delay between each retry (in seconds, for output action)
+    retries_delay_output_action: # optional, default is 120
+    # Job delay
+    delay: # optional, default is 0
+    # Use pre-built docker image from [GitHub container registry](https://github.com/lowlighter/metrics/pkgs/container/metrics)
+    use_prebuilt_image: # optional, default is true
+    # Fatal plugin errors
+    plugins_errors_fatal: # optional
+    # Debug mode
+    debug: # optional
+    # SVG validity check
+    verify: # optional
+    # Debug flags
+    debug_flags: # optional, default is 
+    # Dry-run
+    dryrun: # optional
+    # Experimental features
+    experimental_features: # optional, default is 
+    # Use mocked data instead of live APIs
+    use_mocked_data: # optional
+    # Enable isocalendar plugin
+    plugin_isocalendar: # optional
+    # Time range
+    plugin_isocalendar_duration: # optional, default is half-year
+    # Enable languages plugin
+    plugin_languages: # optional
+    # Ignored languages
+    plugin_languages_ignored: # optional, default is 
+    # Skipped repositories
+    plugin_languages_skipped: # optional, default is 
+    # Display limit
+    plugin_languages_limit: # optional, default is 8
+    # Display threshold (percentage)
+    plugin_languages_threshold: # optional, default is 0%
+    # Custom languages colors
+    plugin_languages_colors: # optional, default is github
+    # Custom languages names
+    plugin_languages_aliases: # optional, default is 
+    # Displayed sections
+    plugin_languages_sections: # optional, default is most-used
+    # Additional details
+    plugin_languages_details: # optional, default is 
+    # Indepth mode (⚠️ read documentation first)
+    plugin_languages_indepth: # optional
+    # Indepth mode - Analysis timeout
+    plugin_languages_analysis_timeout: # optional, default is 15
+    # Indepth mode - Displayed categories (most-used section)
+    plugin_languages_categories: # optional, default is markup, programming
+    # Indepth mode - Displayed categories (recently-used section)
+    plugin_languages_recent_categories: # optional, default is markup, programming
+    # Events to load (recently-used section)
+    plugin_languages_recent_load: # optional, default is 300
+    # Events maximum age (day, recently-used section)
+    plugin_languages_recent_days: # optional, default is 14
+    # Enable topics plugin
+    plugin_topics: # optional
+    # Display mode:
+    plugin_topics_mode: # optional, default is starred
+    # Sorting method:
+    plugin_topics_sort: # optional, default is stars
+    # Display limit
+    plugin_topics_limit: # optional, default is 15
+    # Enable stars plugin
+    plugin_stars: # optional
+    # Display limit
+    plugin_stars_limit: # optional, default is 4
+    # Enable licenses plugin
+    plugin_licenses: # optional
+    # Setup command
+    plugin_licenses_setup: # optional, default is 
+    # Display used licenses ratio
+    plugin_licenses_ratio: # optional
+    # Display permissions, limitations and conditions about licenses
+    plugin_licenses_legal: # optional, default is true
+    # Enable habits plugin
+    plugin_habits: # optional
+    # Events to use
+    plugin_habits_from: # optional, default is 200
+    # Event maximum age
+    plugin_habits_days: # optional, default is 14
+    # Toggle midly interesting facts display
+    plugin_habits_facts: # optional, default is true
+    # Toggle charts display
+    plugin_habits_charts: # optional
+    # Trim unused hours on charts
+    plugin_habits_trim: # optional
+    # Enable contributors plugin
+    plugin_contributors: # optional
+    # Base reference (commit, tag, branch, etc.)
+    plugin_contributors_base: # optional, default is 
+    # Head reference (commit, tag, branch, etc.)
+    plugin_contributors_head: # optional, default is master
+    # Ignored users
+    plugin_contributors_ignored: # optional, default is 
+    # Toggle number of contributions display
+    plugin_contributors_contributions: # optional
+    # Displayed sections
+    plugin_contributors_sections: # optional, default is contributors
+    # Configure contribution categories
+    plugin_contributors_categories: # optional, default is {
+  "📚 Documentation": ["README.md", "docs/**"],
+  "💻 Code": ["source/**", "src/**"],
+  "#️⃣ Others": ["*"]
+}
+
+    # Enable followup plugin
+    plugin_followup: # optional
+    # Displayed sections
+    plugin_followup_sections: # optional, default is repositories
+    # Indepth analysis
+    plugin_followup_indepth: # optional
+    # Enable reactions plugin
+    plugin_reactions: # optional
+    # Display limit (issues and pull requests comments)
+    plugin_reactions_limit: # optional, default is 200
+    # Display limit (issues and pull requests, first comment)
+    plugin_reactions_limit_issues: # optional, default is 100
+    # Display limit (discussions, first comment)
+    plugin_reactions_limit_discussions: # optional, default is 100
+    # Display limit (discussions comments)
+    plugin_reactions_limit_discussions_comments: # optional, default is 100
+    # Comments maximum age
+    plugin_reactions_days: # optional, default is 0
+    # Display mode
+    plugin_reactions_display: # optional, default is absolute
+    # Additional details
+    plugin_reactions_details: # optional, default is 
+    # Ignored users
+    plugin_reactions_ignored: # optional, default is 
+    # Enable people plugin
+    plugin_people: # optional
+    # Display limit
+    plugin_people_limit: # optional, default is 24
+    # Toggle identicons display
+    plugin_people_identicons: # optional
+    # Profile picture display size
+    plugin_people_size: # optional, default is 28
+    # Displayed sections (order is respected)
+    plugin_people_types: # optional, default is followers, following
+    # Special thanks
+    plugin_people_thanks: # optional, default is 
+    # Custom sponsors
+    plugin_people_sponsors_custom: # optional, default is 
+    # Shuffle data for varied output
+    plugin_people_shuffle: # optional
+    # Enable stargazers plugin
+    plugin_stargazers: # optional
+    # Enable projects plugin
+    plugin_projects: # optional
+    # Display limit
+    plugin_projects_limit: # optional, default is 4
+    # List of repositories projects
+    plugin_projects_repositories: # optional, default is 
+    # Toggle projects descriptions display
+    plugin_projects_descriptions: # optional
+    # Enable code plugin
+    plugin_code: # optional
+    # Display limit for code snippets
+    plugin_code_lines: # optional, default is 12
+    # Events to load
+    plugin_code_load: # optional, default is 100
+    # Events visibility
+    plugin_code_visibility: # optional, default is public
+    # Skipped repositories
+    plugin_code_skipped: # optional, default is 
+    # Restrict display to specific languages
+    plugin_code_languages: # optional, default is 
+    # Enable activity plugin
+    plugin_activity: # optional
+    # Display limit
+    plugin_activity_limit: # optional, default is 5
+    # Events to load
+    plugin_activity_load: # optional, default is 300
+    # Events maximum age
+    plugin_activity_days: # optional, default is 14
+    # Events visibility
+    plugin_activity_visibility: # optional, default is all
+    # Display events timestamps
+    plugin_activity_timestamps: # optional
+    # Skipped repositories
+    plugin_activity_skipped: # optional, default is 
+    # Ignored users
+    plugin_activity_ignored: # optional, default is 
+    # Events types
+    plugin_activity_filter: # optional, default is all
+    # Enable achievements plugin
+    plugin_achievements: # optional
+    # Display rank threshold
+    plugin_achievements_threshold: # optional, default is C
+    # Display secrets achievements
+    plugin_achievements_secrets: # optional, default is true
+    # Display style
+    plugin_achievements_display: # optional, default is detailed
+    # Display limit
+    plugin_achievements_limit: # optional, default is 0
+    # Hide specified achievements
+    plugin_achievements_ignored: # optional, default is 
+    # Restrict display to specified achievements
+    plugin_achievements_only: # optional, default is 
+    # Enable notable plugin
+    plugin_notable: # optional
+    # Query filter
+    plugin_notable_filter: # optional, default is 
+    # Skipped repositories
+    plugin_notable_skipped: # optional, default is 
+    # Filter by repository owner account type
+    plugin_notable_from: # optional, default is organization
+    # Toggle repository name display
+    plugin_notable_repositories: # optional
+    # Indepth mode
+    plugin_notable_indepth: # optional
+    # Enable discussions plugin
+    plugin_discussions: # optional
+    # Toggle discussion categories display
+    plugin_discussions_categories: # optional, default is true
+    # Display limit (categories)
+    plugin_discussions_categories_limit: # optional, default is 0
+    # Enable support plugin
+    plugin_support: # optional
+    # Enable lines plugin
+    plugin_lines: # optional
+    # Skipped repositories
+    plugin_lines_skipped: # optional, default is 
+    # Enable traffic plugin
+    plugin_traffic: # optional
+    # Skipped repositories
+    plugin_traffic_skipped: # optional, default is 
+    # Enable repositories plugin
+    plugin_repositories: # optional
+    # List of featured repositories
+    plugin_repositories_featured: # optional, default is 
+    # Enable gists plugin
+    plugin_gists: # optional
+    # Display account or repository introduction
+    plugin_introduction: # optional
+    # Display introduction section title
+    plugin_introduction_title: # optional, default is true
+    # Enable sponsors plugin
+    plugin_sponsors: # optional
+    # Displayed sections
+    plugin_sponsors_sections: # optional, default is goal, about
+    # Enable starlists plugin
+    plugin_starlists: # optional
+    # Display limit (star lists)
+    plugin_starlists_limit: # optional, default is 2
+    # Display limit (repositories per star list)
+    plugin_starlists_limit_repositories: # optional, default is 2
+    # Shuffle data for varied outputs
+    plugin_starlists_shuffle_repositories: # optional, default is true
+    # Skipped star lists
+    plugin_starlists_ignored: # optional, default is 
+    # Restrict display to specified star lists
+    plugin_starlists_only: # optional, default is 
+    # Enable skyline plugin
+    plugin_skyline: # optional
+    # Displayed year
+    plugin_skyline_year: # optional, default is current-year
+    # Frames count
+    plugin_skyline_frames: # optional, default is 60
+    # Image quality
+    plugin_skyline_quality: # optional, default is 0.5
+    # Compatibility mode
+    plugin_skyline_compatibility: # optional
+    # Enable pagespeed plugin
+    plugin_pagespeed: # optional
+    # Audited website
+    plugin_pagespeed_url: # optional, default is .user.website
+    # Detailed results
+    plugin_pagespeed_detailed: # optional
+    # Display a website screenshot
+    plugin_pagespeed_screenshot: # optional
+    # PageSpeed token
+    plugin_pagespeed_token: # optional, default is 
+    # Enable music plugin
+    plugin_music: # optional
+    # Music provider
+    plugin_music_provider: # optional, default is 
+    # Music provider token
+    plugin_music_token: # optional, default is 
+    # Display mode
+    plugin_music_mode: # optional, default is 
+    # Playlist URL
+    plugin_music_playlist: # optional, default is 
+    # Display limit
+    plugin_music_limit: # optional, default is 4
+    # Recently played - Toggle last played timestamp display
+    plugin_music_played_at: # optional
+    # Top tracks - Time range for `top` mode
+    plugin_music_time_range: # optional, default is short
+    # Top tracks - Display type
+    plugin_music_top_type: # optional, default is tracks
+    # Music provider username
+    plugin_music_user: # optional, default is .user.login
+    # Enable stackoverflow plugin
+    plugin_stackoverflow: # optional
+    # Stackoverflow user id
+    plugin_stackoverflow_user: # optional, default is 0
+    # Displayed sections
+    plugin_stackoverflow_sections: # optional, default is answers-top, questions-recent
+    # Display limit (per section)
+    plugin_stackoverflow_limit: # optional, default is 2
+    # Display limit for questions and answers
+    plugin_stackoverflow_lines: # optional, default is 4
+    # Display limit for code snippets
+    plugin_stackoverflow_lines_snippet: # optional, default is 2
+    # Enable aniList plugin
+    plugin_anilist: # optional
+    # Display medias types
+    plugin_anilist_medias: # optional, default is anime, manga
+    # Displayed sections
+    plugin_anilist_sections: # optional, default is favorites
+    # Display limit (medias)
+    plugin_anilist_limit: # optional, default is 2
+    # Display limit (characters)
+    plugin_anilist_limit_characters: # optional, default is 22
+    # Shuffle data for varied outputs
+    plugin_anilist_shuffle: # optional, default is true
+    # AniList login
+    plugin_anilist_user: # optional, default is .user.login
+    # Enable tweets plugin
+    plugin_tweets: # optional
+    # Twitter API token
+    plugin_tweets_token: # optional, default is 
+    # Display tweets attachments (images, video previews, etc.)
+    plugin_tweets_attachments: # optional
+    # Display limit
+    plugin_tweets_limit: # optional, default is 2
+    # Twitter username
+    plugin_tweets_user: # optional, default is .user.twitter
+    # Enable posts plugin
+    plugin_posts: # optional
+    # External source
+    plugin_posts_source: # optional, default is 
+    # Toggle posts descriptions display
+    plugin_posts_descriptions: # optional
+    # Toggle posts cover images display
+    plugin_posts_covers: # optional
+    # Display limit
+    plugin_posts_limit: # optional, default is 4
+    # External source username
+    plugin_posts_user: # optional, default is .user.login
+    # Enable rss plugin
+    plugin_rss: # optional
+    # RSS feed source
+    plugin_rss_source: # optional, default is 
+    # Display limit
+    plugin_rss_limit: # optional, default is 4
+    # Enable wakatime plugin
+    plugin_wakatime: # optional
+    # WakaTime API token
+    plugin_wakatime_token: # optional, default is 
+    # Time range
+    plugin_wakatime_days: # optional, default is 7
+    # Displayed sections
+    plugin_wakatime_sections: # optional, default is time, projects, projects-graphs, languages, languages-graphs, editors, os
+    # Display limit (per graph)
+    plugin_wakatime_limit: # optional, default is 5
+    # WakaTime url
+    plugin_wakatime_url: # optional, default is https://wakatime.com
+    # WakaTime username
+    plugin_wakatime_user: # optional, default is current
+    # Enable nightscout plugin
+    plugin_nightscout: # optional
+    # Nightscout URL
+    plugin_nightscout_url: # optional, default is https://example.herokuapp.com
+    # Number of datapoints shown the graph
+    plugin_nightscout_datapoints: # optional, default is 12
+    # Threshold for low blood sugar
+    plugin_nightscout_lowalert: # optional, default is 80
+    # Threshold for high blood sugar
+    plugin_nightscout_highalert: # optional, default is 180
+    # Threshold for urgently low blood sugar
+    plugin_nightscout_urgentlowalert: # optional, default is 50
+    # Threshold for urgently high blood sugar
+    plugin_nightscout_urgenthighalert: # optional, default is 250
+    # Enable poopmap plugin
+    plugin_poopmap: # optional
+    # PoopMap API token
+    plugin_poopmap_token: # optional, default is 
+    # Time range
+    plugin_poopmap_days: # optional, default is 7
+    # Enable screenshot plugin
+    plugin_screenshot: # optional
+    # Title caption
+    plugin_screenshot_title: # optional, default is Screenshot
+    # Website url
+    plugin_screenshot_url: # optional, default is 
+    # CSS Selector
+    plugin_screenshot_selector: # optional, default is body
+    # Display background
+    plugin_screenshot_background: # optional, default is true
+    # Enable stock plugin
+    plugin_stock: # optional
+    # Yahoo Finance token
+    plugin_stock_token: # optional, default is 
+    # Company stock symbol
+    plugin_stock_symbol: # optional, default is 
+    # Time range (relative to current date)
+    plugin_stock_duration: # optional, default is 1d
+    # Time interval between points
+    plugin_stock_interval: # optional, default is 5m
