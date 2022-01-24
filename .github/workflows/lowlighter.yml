@@ -178,12 +178,7 @@
     # Displayed sections
     plugin_contributors_sections: # optional, default is contributors
     # Configure contribution categories
-    plugin_contributors_categories: # optional, default is {
-  "📚 Documentation": ["README.md", "docs/**"],
-  "💻 Code": ["source/**", "src/**"],
-  "#️⃣ Others": ["*"]
-}
-
+    plugin_contributors_categories: { "📚 Documentation": ["README.md", "docs/**"],"💻 Code": ["source/**", "src/**"],  "#️⃣ Others": ["*"]}
     # Enable followup plugin
     plugin_followup: # optional
     # Displayed sections
