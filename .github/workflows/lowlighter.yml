@@ -97,12 +97,14 @@
     experimental_features: # optional, default is 
     # Use mocked data instead of live APIs
     use_mocked_data: # optional
+    
+     plugin_achievements: yes
     # Enable isocalendar plugin
-    plugin_isocalendar: # optional
+    plugin_isocalendar: yes
     # Time range
     plugin_isocalendar_duration: # optional, default is half-year
     # Enable languages plugin
-    plugin_languages: # optional
+    plugin_languages: yes
     # Ignored languages
     plugin_languages_ignored: # optional, default is 
     # Skipped repositories
