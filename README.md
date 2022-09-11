@@ -1,8 +1,8 @@
 <a align="right" href="https://app.daily.dev/lightify97"><img src="https://api.daily.dev/devcards/42982c2155b0424c888605e82c1e798e.png?r=f32" width="400" alt="Muhammad Ramzan's Dev Card" style='display: inline;'/></a>
 # 💫About Me :
 ### 🔭 I’m currently working on **Highly scaleable backends.**
-### 👯 I’m looking to collaborate on projects relating to **developer tools**.
-### 🌱 I’m currently mastering Javascript, Python and C#.
+### 👯 I’m looking to collaborate on projects relating to **Backend or Tooling**.
+### 🌱 I’m currently mastering Javascript, Python and Go.
 ### 💬 Ask me about anything.
 
 ## 🌐Socials
