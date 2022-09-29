@@ -21,8 +21,5 @@
 ### ✍️Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
-### 😂Random Dev Meme
-<img src="https://random-memer.herokuapp.com/" width="512px"/>
-
 ---
 ![](https://komarev.com/ghpvc/?username=lightify97&label=Visitors+Count&color=brightgreen)
