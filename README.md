@@ -2,7 +2,6 @@
 ### 🔭 I’m currently focusing on *Backend*
 ### 👯 I’m looking to collaborate on projects relating to **Backend, Cloud or Tooling**.
 ### 🌱 I’m currently mastering Effecient backends.
-### 💬 Ask me about anything.
 
 ## 🌐 Get in Touch
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=923055103316&text=Hi%20Ramzan!%20I%20came%20across%20your%20profile.%20Let%27s%20have%20a%20chat) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/m-ramazan) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white)](https://reddit.com/user/Confident-Star25) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/6043783) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/LightifyCodes) 
