@@ -1,4 +1,3 @@
-<a align="right" href="https://app.daily.dev/lightify97"><img src="https://api.daily.dev/devcards/v2/9e6c46be82c841cca068520a5f55d5ff.png?type=wide&r=pk8" width="auto" alt="Muhammad Ramzan's Dev Card" style='display: inline;'/></a>
 # 💫About Me :
 ### 🔭 I’m currently focusing on *Backend*
 ### 👯 I’m looking to collaborate on projects relating to **Backend, Cloud or Tooling**.
